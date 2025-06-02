@@ -5,7 +5,7 @@
 
 > **Note**: This is the raw, production-ready version of QuantumScope. Stay tuned for epic AI enhancements coming soon! 💪
 
-![QuantumScope Banner](![Copilot_20250602_165719](https://github.com/user-attachments/assets/06624d28-0eb7-4974-9c6e-581994a7a7b2) <!-- Replace with actual banner -->
+<img src="https://github.com/user-attachments/assets/06624d28-0eb7-4974-9c6e-581994a7a7b2" width="60%">
 
 [![PyPI Version](https://img.shields.io/pypi/v/QuantumScope.svg)](https://pypi.org/project/QuantumScope/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/QuantumScope.svg)](https://pypi.org/project/QuantumScope/)
