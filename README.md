@@ -176,7 +176,7 @@ Settings saved to `~/.QuantumScope/config.json`.
 | `json` | Full metadata | `report.json` |
 
 **Markdown Example**:
-```markdown
+
 # QuantumScope Research Report
 
 **Query:** `AI in healthcare`
@@ -189,12 +189,10 @@ Settings saved to `~/.QuantumScope/config.json`.
 1. <https://www.nature.com/articles/s41591-021-01336-3>
 2. <https://arxiv.org/abs/2005.12345>
 
-## 📄 Report Text
+## 📄 Repo Text
 ```text
 AI is revolutionizing healthcare through diagnostics...
 ```
-```
-
 ---
 
 ## 🎉 CLI Animation
