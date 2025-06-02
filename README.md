@@ -200,12 +200,12 @@ AI is revolutionizing healthcare through diagnostics...
 ## 🎉 CLI Animation
 
 Simulated CLI progress:
-```
+
 🚀 Researching... [⠋] 
 🚀 Researching... [⠙] 
 🚀 Researching... [⠹] 
 ✅ Done!
-```
+
 
 ---
 
@@ -218,11 +218,8 @@ Handles:
 - **Invalid Queries**: Prompts for valid input.
 
 **Example Error**:
-```
+`
 ❌ WebSocket Connection Error: Server unavailable at wss://searc.ai/ws
-```
-
-
 
 ## 📊 Performance
 
