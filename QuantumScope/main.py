@@ -18,8 +18,10 @@ import signal
 import threading
 import argparse
 import os
+import ssl
 from urllib.parse import quote
 from typing import Dict, List, Optional, Any
+import certifi
 
 __version__ = "1.0.2"
 __author__ = "Parvesh Rawal from XenArcAI"
@@ -217,8 +219,15 @@ class QuantumScopeEngine:
         self.interrupt_handler.interrupted = False
 
         try:
-            async with websockets.connect(uri, additional_headers=headers,
-                                        ping_interval=20, ping_timeout=20,
+            # Create SSL context with certifi certificates
+            ssl_context = ssl.create_default_context()
+            ssl_context.load_verify_locations(certifi.where())
+            
+            async with websockets.connect(uri, 
+                                        additional_headers=headers,
+                                        ssl=ssl_context,
+                                        ping_interval=20, 
+                                        ping_timeout=20,
                                         open_timeout=10) as websocket:
 
                 self.interrupt_handler.websocket = websocket
@@ -399,7 +408,7 @@ class QuantumScopeEngine:
 
     async def _finalize_results(self, report: str, sources: List, download_links: Dict,
                               message_count: int, duration: float, base_url: str, interrupted: bool = False) -> Dict[str, Any]:
-        print(f"\n{SEPARATOR}")
+        print("\n" + "="*70)
         if interrupted:
             print(f"{C.BOLD}{C.YELLOW}📊 Partial QuantumScope Research Results 📊{C.RESET}")
         else:
