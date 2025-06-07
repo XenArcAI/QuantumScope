@@ -7,7 +7,7 @@ Thank you for your interest in contributing to QuantumScope! We welcome contribu
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally
    ```bash
-   git clone https://github.com/your-username/QuantumScope.git
+   git clone https://github.com/XenArcAI/QuantumScope.git
    cd QuantumScope
    ```
 3. **Create a new branch** for your feature or bugfix
