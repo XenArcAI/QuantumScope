@@ -1,9 +1,160 @@
 
-# QuantumScope 🚀
+<div align="center">
+  <h1>QuantumScope 🔍</h1>
+  
+  [![PyPI Version](https://img.shields.io/pypi/v/quantumscope?color=blue)](https://pypi.org/project/quantumscope/)
+  [![Python Versions](https://img.shields.io/pypi/pyversions/quantumscope)](https://pypi.org/project/quantumscope/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+  [![Tests](https://github.com/xenarcai/QuantumScope/actions/workflows/ci.yml/badge.svg)](https://github.com/xenarcai/QuantumScope/actions)
+  [![Codecov](https://codecov.io/gh/xenarcai/QuantumScope/branch/main/graph/badge.svg)](https://codecov.io/gh/xenarcai/QuantumScope)
+  [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord)](https://discord.gg/BBMdTZrpzX)
 
-**QuantumScope** is a powerful CLI tool for AI-powered research and report generation, designed for researchers, developers, and professionals. Powered by a real-time WebSocket crawler, it delivers fast, customizable research reports with sources and downloadable files. Whether you're digging into academic papers, industry trends, or cutting-edge tech, QuantumScope streamlines your research workflow.
+  **QuantumScope** is a powerful CLI tool for AI-powered research and report generation, designed for researchers, developers, and professionals. Powered by a real-time WebSocket crawler, it delivers fast, customizable research reports with sources and downloadable files.
 
-> **Note**: This is the raw, production-ready version of QuantumScope. Stay tuned for epic AI enhancements coming soon! 💪
+  > 🚀 **Now with enhanced performance, better error handling, and extensible architecture!**
+</div>
+
+## ✨ Features
+
+- **AI-Powered Research**: Get comprehensive reports on any topic with real-time processing
+- **Multiple Report Types**: Choose from various formats and tones
+- **Domain Filtering**: Focus research on specific domains or sources
+- **Caching**: Built-in caching for faster repeated queries
+- **Robust Error Handling**: Graceful recovery from network issues and timeouts
+- **Extensible**: Plugin architecture for custom integrations
+- **Async I/O**: High-performance asynchronous operations
+- **Comprehensive Logging**: Detailed logs for debugging and monitoring
+- **Configuration Management**: Environment variables and config file support
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Install from PyPI
+pip install quantumscope
+
+# Or install with optional dependencies
+pip install "quantumscope[all]"
+
+# For development
+pip install -e ".[dev]"
+```
+
+### Basic Usage
+
+```bash
+# Simple query
+QuantumScope "latest advancements in quantum computing"
+
+# With options
+QuantumScope "impact of AI on climate change" --report-type detailed --tone Formal --domains arxiv.org,nature.com
+
+# Interactive mode
+QuantumScope --interactive
+```
+
+## 📚 Documentation
+
+For full documentation, including advanced usage, configuration, and API reference, please visit our [documentation site](https://xenarcai.github.io/QuantumScope/).
+
+### Configuration
+
+QuantumScope can be configured via:
+
+1. Environment variables (prefixed with `QUANTUMSCOPE_`)
+2. Config file at `~/.config/quantumscope/config.json`
+3. Command-line arguments
+
+Example config file:
+
+```json
+{
+  "websocket_url": "wss://searc.ai/ws",
+  "timeout": 30,
+  "max_retries": 3,
+  "cache_ttl": 3600,
+  "log_level": "INFO"
+}
+```
+
+## 🛠 Development
+
+### Prerequisites
+
+- Python 3.8+
+- [Poetry](https://python-poetry.org/) (recommended) or pip
+
+### Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/xenarcai/QuantumScope.git
+cd QuantumScope
+
+# Install dependencies with poetry
+poetry install --with dev
+
+# Or with pip
+pip install -e ".[dev]"
+
+# Install pre-commit hooks
+pre-commit install
+```
+
+### Testing
+
+```bash
+# Run all tests
+pytest
+
+# Run with coverage
+pytest --cov=QuantumScope --cov-report=term-missing
+
+# Run specific test file
+pytest tests/test_module.py
+```
+
+### Building
+
+```bash
+# Build package
+python -m build
+
+# Check build
+twine check dist/*
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) for details.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [XenArcAI](https://xenarc.ai) - For the original implementation
+- [websockets](https://websockets.readthedocs.io/) - For the amazing WebSocket client
+- All our amazing contributors and users!
+
+---
+
+<div align="center">
+  Made with ❤️ by <a href="https://xenarc.ai">XenArcAI</a>
+  <br>
+  <a href="https://discord.gg/BBMdTZrpzX">Join our Discord</a> | 
+  <a href="https://github.com/xenarcai/QuantumScope/issues">Report an Issue</a> | 
+  <a href="https://github.com/xenarcai/QuantumScope/discussions">Discussions</a>
+</div>
 
 <img src="https://github.com/user-attachments/assets/06624d28-0eb7-4974-9c6e-581994a7a7b2" width="60%">
 

@@ -1,2 +1,16 @@
+# Core Dependencies
 websockets>=10.0
 certifi>=2025.4.26
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+aiohttp>=3.8.0
+
+# Optional Dependencies (for enhanced functionality)
+# rich>=13.0.0  # For rich console output
+# aiofiles>=23.1.0  # For async file operations
+# pyyaml>=6.0  # For YAML configuration support
+
+# Version Pins for Security
+# (Add specific versions for security-critical packages)
+# requests>=2.31.0,<3.0.0
+# urllib3>=2.0.0,<3.0.0
